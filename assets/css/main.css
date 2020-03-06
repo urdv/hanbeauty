@@ -1,0 +1,753 @@
+@import url(//cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* introduction */
+.introduction {
+  opacity: 0;
+  font-family: 'NanumSquare', sans-serif;
+  box-sizing: border-box; }
+  .introduction *, .introduction *::before, .introduction *::after {
+    box-sizing: border-box; }
+  .introduction.play {
+    opacity: 1; }
+  .introduction a, .introduction button {
+    color: #666;
+    background: none;
+    text-decoration: none !important; }
+    .introduction a:hover, .introduction a:focus, .introduction button:hover, .introduction button:focus {
+      color: #444;
+      box-shadow: none; }
+  .introduction .container-fluid .bx-wrapper {
+    position: relative;
+    margin: 0;
+    border: 0;
+    background: none;
+    box-shadow: none; }
+    .introduction .container-fluid .bx-wrapper .bx-controls-direction {
+      display: none; }
+    .introduction .container-fluid .bx-wrapper .bx-pager {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+      z-index: 99; }
+      .introduction .container-fluid .bx-wrapper .bx-pager .bx-pager-item {
+        display: inline-block; }
+        .introduction .container-fluid .bx-wrapper .bx-pager .bx-pager-item > a {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 15px;
+          margin: 0 4px;
+          opacity: .3;
+          background-color: #fff;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .introduction .container-fluid .bx-wrapper .bx-pager .bx-pager-item > a.active {
+            width: 36px;
+            opacity: 1; }
+  .introduction .container-fluid .intro-slide .intro-item {
+    position: relative;
+    height: 450px; }
+    .introduction .container-fluid .intro-slide .intro-item .figure {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover; }
+    .introduction .container-fluid .intro-slide .intro-item .default-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: table;
+      table-layout: fixed; }
+      .introduction .container-fluid .intro-slide .intro-item .default-content .v-align {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+        .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > h3 {
+          font-size: 30px;
+          font-weight: bold;
+          color: #fff;
+          opacity: 0;
+          transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+        .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > p {
+          font-size: 22px;
+          color: #fff;
+          margin-top: 20px;
+          opacity: 0;
+          transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; }
+        .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more {
+          position: relative;
+          display: inline-block;
+          font-size: 16px;
+          color: #deccff;
+          line-height: 18px;
+          opacity: 0;
+          margin-top: 25px;
+          transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s; }
+          .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more:after {
+            position: relative;
+            top: -1px;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            content: '';
+            vertical-align: middle;
+            margin-left: 5px;
+            background-image: url(/assets/images/btn_more_img.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 18px auto;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+          .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more:hover:after {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg); }
+    .introduction .container-fluid .intro-slide .intro-item .video {
+      display: none; }
+    .introduction .container-fluid .intro-slide .intro-item.active .default-content > .v-align > h3 {
+      opacity: 1;
+      transform: translateY(0); }
+    .introduction .container-fluid .intro-slide .intro-item.active .default-content > .v-align > p {
+      opacity: 1;
+      transform: translateY(0); }
+    .introduction .container-fluid .intro-slide .intro-item.active .default-content > .v-align > .btn-more {
+      opacity: 1;
+      transform: translateY(0); }
+  @media (min-width: 768px) {
+    .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction {
+      display: block; }
+      .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a {
+        position: absolute;
+        top: 50%;
+        width: 100px;
+        height: 70px;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'NanumSquare', sans-serif;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: -35px;
+        text-indent: 0;
+        padding-left: 10px;
+        background-size: 100px auto;
+        z-index: 99; }
+        .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+          padding-top: 54px;
+          left: 10px;
+          background-image: url(/assets/images/img_btn_prev.png);
+          background-repeat: no-repeat;
+          background-position: 50% 0; }
+        .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+          right: 10px;
+          padding-bottom: 54px;
+          background-image: url(/assets/images/img_btn_next.png);
+          background-repeat: no-repeat;
+          background-position: 50% 100%; }
+    .introduction .container-fluid .bx-wrapper .bx-controls .bx-pager {
+      bottom: 50px; }
+      .introduction .container-fluid .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px; }
+        .introduction .container-fluid .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a.active {
+          width: 45px; }
+    .introduction .container-fluid .intro-slide .intro-item {
+      height: 700px; }
+      .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > h3 {
+        font-size: 60px; }
+      .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > p {
+        font-size: 26px;
+        margin-top: 30px; }
+      .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more {
+        font-size: 22px;
+        margin-top: 55px;
+        line-height: 26px; }
+        .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more:after {
+          width: 26px;
+          height: 26px;
+          background-size: 26px auto;
+          margin-left: 10px; } }
+  @media (min-width: 992px) {
+    .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+      left: 40px; }
+    .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+      right: 40px; }
+    .introduction .container-fluid .intro-slide .intro-item {
+      height: 800px; }
+      .introduction .container-fluid .intro-slide .intro-item .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5); } }
+  @media (min-width: 1200px) {
+    .introduction .container-fluid .intro-slide .intro-item {
+      height: 950px; }
+      .introduction .container-fluid .intro-slide .intro-item .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5); } }
+
+/* popularity-procedure */
+.popularity-procedure {
+  font-family: 'NanumSquare', sans-serif;
+  box-sizing: border-box; }
+  .popularity-procedure *, .popularity-procedure *::before, .popularity-procedure *::after {
+    box-sizing: border-box; }
+  .popularity-procedure .container {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto; }
+  .popularity-procedure .section-header {
+    text-align: center;
+    padding: 60px 0 50px; }
+    .popularity-procedure .section-header .container {
+      padding: 0 15px; }
+    .popularity-procedure .section-header h3 {
+      font-size: 26px;
+      color: #000;
+      margin-bottom: 30px; }
+    .popularity-procedure .section-header .bx-wrapper {
+      position: relative;
+      max-width: 100% !important; }
+      .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list {
+        text-align: center; }
+        .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li {
+          display: inline-block; }
+          .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li > a {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #5d00b3;
+            letter-spacing: -1.5px;
+            text-decoration: none !important; }
+      .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a {
+        position: absolute;
+        top: 50%;
+        margin-top: -11px;
+        width: 11px;
+        height: 22px;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 11px auto; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+          left: -10px;
+          background-image: url(/assets/images/main/btn_arrow_prev.png); }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+          right: -10px;
+          background-image: url(/assets/images/main/btn_arrow_next.png); }
+  .popularity-procedure .section-content {
+    padding: 30px 0;
+    background-color: #f0f0f0; }
+    .popularity-procedure .section-content .container {
+      padding: 0 10px; }
+    .popularity-procedure .section-content article ~ article {
+      margin-top: 40px; }
+    .popularity-procedure .section-content article .article-header {
+      padding-bottom: 20px; }
+      .popularity-procedure .section-content article .article-header > h4 {
+        font-size: 18px;
+        color: #000;
+        line-height: 26px; }
+        .popularity-procedure .section-content article .article-header > h4 b {
+          display: block;
+          font-weight: bold;
+          color: #8e82fe; }
+    .popularity-procedure .section-content article > ul > li {
+      padding: 20px 10px 30px;
+      background-color: #fff; }
+      .popularity-procedure .section-content article > ul > li ~ li {
+        margin-top: 10px; }
+      .popularity-procedure .section-content article > ul > li > a {
+        display: block;
+        text-decoration: none; }
+        .popularity-procedure .section-content article > ul > li > a figure > img {
+          width: 100%; }
+        .popularity-procedure .section-content article > ul > li > a figure figcaption {
+          text-align: center;
+          padding-top: 20px; }
+          .popularity-procedure .section-content article > ul > li > a figure figcaption > p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+            display: block; }
+          .popularity-procedure .section-content article > ul > li > a figure figcaption > strong {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+            display: block;
+            font-weight: bold; }
+  @media (min-width: 768px) {
+    .popularity-procedure .section-header {
+      padding: 60px 0; }
+      .popularity-procedure .section-header .container {
+        padding: 0 30px; }
+      .popularity-procedure .section-header h3 {
+        font-size: 46px;
+        margin-bottom: 70px; }
+      .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li > a {
+        font-size: 17px;
+        line-height: 40px; }
+      .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a {
+        margin-top: -20px;
+        width: 18px;
+        height: 40px;
+        background-size: 18px auto; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+          left: -15px; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+          right: -15px; }
+    .popularity-procedure .section-content {
+      padding: 50px 0; }
+      .popularity-procedure .section-content article .article-header {
+        padding: 20px 10px 0;
+        background-color: #fff; }
+        .popularity-procedure .section-content article .article-header > h4 > b {
+          display: inline-block; }
+      .popularity-procedure .section-content article > ul {
+        overflow: hidden;
+        width: 100%;
+        padding: 20px 10px;
+        background-color: #fff; }
+        .popularity-procedure .section-content article > ul > li {
+          float: left;
+          width: 50%;
+          padding: 0;
+          background: none; }
+          .popularity-procedure .section-content article > ul > li ~ li {
+            margin-top: 0; }
+          .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 1) {
+            clear: both;
+            padding-right: 5px; }
+          .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 2) {
+            padding-left: 5px; } }
+  @media (min-width: 992px) {
+    .popularity-procedure .section-header {
+      padding: 100px 0; }
+      .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li > a {
+        font-size: 20px;
+        line-height: 44px;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li > a:hover {
+          opacity: .7; }
+      .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a {
+        margin-top: -22px;
+        width: 22px;
+        height: 44px;
+        background-size: 22px auto;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+          left: -20px; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+          right: -20px; }
+        .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a:hover {
+          opacity: .7; }
+    .popularity-procedure .section-content .container {
+      overflow: hidden; }
+    .popularity-procedure .section-content article {
+      float: left;
+      width: 50%; }
+      .popularity-procedure .section-content article:nth-of-type(2n + 1) {
+        clear: both;
+        padding-right: 5px; }
+      .popularity-procedure .section-content article:nth-of-type(2n + 2) {
+        padding-left: 5px; }
+      .popularity-procedure .section-content article ~ article {
+        margin-top: 0; }
+      .popularity-procedure .section-content article > ul > li > a {
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+        .popularity-procedure .section-content article > ul > li > a:hover {
+          opacity: .7; } }
+  @media (min-width: 1200px) {
+    .popularity-procedure .section-header .bx-wrapper .bx-viewport .popularity-list li > a {
+      font-size: 24px; }
+    .popularity-procedure .section-content .container {
+      padding: 0; } }
+  @media (min-width: 1300px) {
+    .popularity-procedure .section-header .container {
+      padding: 0; }
+    .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+      left: -40px; }
+    .popularity-procedure .section-header .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+      right: -40px; } }
+
+/* hanbeauty-insta */
+.hanbeauty-insta {
+  font-family: 'NanumSquare', sans-serif;
+  box-sizing: border-box; }
+  .hanbeauty-insta *, .hanbeauty-insta *::before, .hanbeauty-insta *::after {
+    box-sizing: border-box; }
+  .hanbeauty-insta .container {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto; }
+  .hanbeauty-insta .section-header {
+    text-align: center;
+    padding: 40px 0 30px; }
+    .hanbeauty-insta .section-header h3 {
+      font-size: 26px;
+      color: #000; }
+      .hanbeauty-insta .section-header h3 > b {
+        font-weight: bold; }
+  .hanbeauty-insta .section-content .container-fluid .bx-wrapper {
+    max-width: 100% !important; }
+    .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list {
+      text-align: center; }
+      .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li {
+        display: inline-block; }
+        .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a {
+          position: relative;
+          display: block;
+          font-size: 0;
+          overflow: hidden; }
+          .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > figure > img {
+            width: 100%; }
+          .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            background-color: rgba(93, 0, 179, 0.8); }
+            .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align {
+              width: 100%;
+              height: 100%;
+              display: table-cell;
+              vertical-align: middle;
+              text-align: center; }
+              .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > figure {
+                display: block;
+                padding: 0 15px; }
+                .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > figure > img {
+                  margin: 0 auto;
+                  max-width: 100%; }
+              .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > p {
+                display: block;
+                width: 70px;
+                font-size: 13px;
+                line-height: 22px;
+                color: #000;
+                text-align: center;
+                margin: 10px auto 0;
+                border-radius: 30px;
+                background-color: #fff; }
+          .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a:hover > .hover {
+            bottom: 0; }
+  @media (min-width: 768px) {
+    .hanbeauty-insta .section-header {
+      padding: 90px 0 70px; }
+      .hanbeauty-insta .section-header h3 {
+        font-size: 46px; }
+    .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > p {
+      width: 100px;
+      font-size: 15px;
+      line-height: 26px;
+      margin-top: 20px; } }
+  @media (min-width: 992px) {
+    .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > figure {
+      padding: 0; }
+    .hanbeauty-insta .section-content .container-fluid .bx-wrapper .bx-viewport .insta-list li > a > .hover > .v-align > p {
+      font-size: 16px;
+      line-height: 32px;
+      margin-top: 35px; } }
+
+/* hanbeauty-youtube */
+.hanbeauty-youtube {
+  font-family: 'NanumSquare', sans-serif;
+  box-sizing: border-box; }
+  .hanbeauty-youtube *, .hanbeauty-youtube *::before, .hanbeauty-youtube *::after {
+    box-sizing: border-box; }
+  .hanbeauty-youtube .container {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto; }
+  .hanbeauty-youtube .section-header {
+    text-align: center;
+    padding: 40px 0 30px; }
+    .hanbeauty-youtube .section-header h3 {
+      font-size: 26px;
+      color: #000; }
+      .hanbeauty-youtube .section-header h3 > b {
+        font-weight: bold; }
+  .hanbeauty-youtube .section-content .container {
+    padding: 0 10px; }
+  .hanbeauty-youtube .section-content .tab-content .tab-pane {
+    display: none; }
+    .hanbeauty-youtube .section-content .tab-content .tab-pane.active {
+      display: block; }
+    .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .video .embed-responsive {
+      position: relative;
+      width: 100%;
+      overflow: hidden; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .video .embed-responsive:before {
+        display: block;
+        content: "";
+        padding-top: 56.25%; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .video .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0; }
+    .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .details {
+      padding: 20px 10px;
+      margin-top: 20px;
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .details > h5 {
+        font-size: 22px;
+        color: #000;
+        letter-spacing: -1px;
+        font-weight: bold;
+        line-height: 26px; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .details > p {
+        font-size: 18px;
+        color: #000;
+        font-weight: 400;
+        margin: 20px 0 10px; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .details > small {
+        display: inline-block;
+        font-size: 14px;
+        color: #000;
+        font-weight: 300;
+        margin-right: 10px; }
+        .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube .details > small:last-child {
+          margin-right: 0; }
+  .hanbeauty-youtube .section-content .tab-menu {
+    margin-top: 20px; }
+    .hanbeauty-youtube .section-content .tab-menu > ul {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      border: 1px solid #ddd; }
+      .hanbeauty-youtube .section-content .tab-menu > ul > li {
+        display: table-cell;
+        vertical-align: middle;
+        width: 33.3333%;
+        border-right: 1px solid #ddd; }
+        .hanbeauty-youtube .section-content .tab-menu > ul > li:last-child {
+          border-right: 0; }
+        .hanbeauty-youtube .section-content .tab-menu > ul > li > a {
+          display: block;
+          text-decoration: none !important;
+          text-align: center;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li > a > figure > img {
+            display: none;
+            width: 100%; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li > a > figure > figcaption {
+            padding: 10px;
+            font-size: 14px;
+            color: #000;
+            line-height: 18px; }
+        .hanbeauty-youtube .section-content .tab-menu > ul > li.active > a > figure > figcaption {
+          color: #fff;
+          background-color: #5d00b3; }
+  @media (min-width: 768px) {
+    .hanbeauty-youtube .section-header {
+      padding: 90px 0 70px; }
+      .hanbeauty-youtube .section-header h3 {
+        font-size: 46px; }
+    .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div {
+        display: table-cell;
+        height: 100%;
+        vertical-align: top; }
+        .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.video {
+          width: 70%;
+          padding-right: 30px; }
+        .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.details {
+          width: 30%;
+          padding: 30px 15px;
+          border-bottom: 0; }
+    .hanbeauty-youtube .section-content .tab-menu {
+      margin-top: 40px; }
+      .hanbeauty-youtube .section-content .tab-menu > ul {
+        width: auto;
+        display: block;
+        border: 0;
+        margin: 0 -10px; }
+        .hanbeauty-youtube .section-content .tab-menu > ul:after {
+          content: ' ';
+          display: block;
+          clear: both; }
+        .hanbeauty-youtube .section-content .tab-menu > ul > li {
+          display: block;
+          float: left;
+          padding: 0 10px;
+          border: 0; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li > a > figure > img {
+            display: block;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li > a > figure > figcaption {
+            display: none; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li.active > a > figure > img {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); } }
+  @media (min-width: 992px) {
+    .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.video {
+      width: 70%;
+      padding-right: 60px; }
+    .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.details {
+      width: 30%;
+      padding: 60px 20px 20px; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.details > h5 {
+        font-size: 30px;
+        line-height: 40px; }
+      .hanbeauty-youtube .section-content .tab-content .tab-pane .play-youtube > div.details > p {
+        font-size: 22px;
+        margin: 40px 0 15px; }
+    .hanbeauty-youtube .section-content .tab-menu {
+      margin-top: 60px; } }
+  @media (min-width: 1200px) {
+    .hanbeauty-youtube .section-content .container {
+      padding: 0; }
+    .hanbeauty-youtube .section-content .tab-menu {
+      padding: 0; }
+      .hanbeauty-youtube .section-content .tab-menu > ul {
+        margin: 0; }
+        .hanbeauty-youtube .section-content .tab-menu > ul > li {
+          padding: 0;
+          width: 362px;
+          margin-right: 57px; }
+          .hanbeauty-youtube .section-content .tab-menu > ul > li:last-child {
+            margin-right: 0; } }
+
+/*# sourceMappingURL=main.css.map */
