@@ -105,7 +105,53 @@
         </button>
     </header>
     <nav id="nav">
-        <div class="backdrop"></div>
+        <div class="backdrop">
+            <div class="video-area">
+                <video loop muted preload="metadata" class="bg-video">
+                    <source src="/assets/movie/KakaoTalk_Video_20200305_1525_04_016.mp4" type="video/mp4">
+                </video>
+                <div class="summary">
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <div class="v-align">
+                                    <h3>매끈한 피부를 위해1</h3>
+                                    <small>아포지플러스</small>
+                                    <a href="#" class="btn-more">여성 제모 바로가기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <div class="v-align">
+                                    <h3>매끈한 피부를 위해2</h3>
+                                    <small>아포지플러스</small>
+                                    <a href="#" class="btn-more">여성 제모 바로가기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <div class="v-align">
+                                    <h3>매끈한 피부를 위해3</h3>
+                                    <small>아포지플러스</small>
+                                    <a href="#" class="btn-more">여성 제모 바로가기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <div class="v-align">
+                                    <h3>매끈한 피부를 위해4</h3>
+                                    <small>아포지플러스</small>
+                                    <a href="#" class="btn-more">여성 제모 바로가기</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="nav-wrap">
             <div class="container">
                 <div class="nav-head">

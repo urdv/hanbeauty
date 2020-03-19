@@ -8,7 +8,7 @@
     <main id="content">
         <!-- page-header -->
         <div class="page-header">
-            <div class="page-intro">
+            <!--<div class="page-intro">
                 <div class="figure" style="background-image: url(/assets/images/sub/bg_page_header.jpg);"></div>
                 <div class="video-area">
                     <video class="video" autoplay loop muted preload="metadata">
@@ -18,38 +18,45 @@
                 <div class="details">
                     <h2>한미인의원소개</h2>
                 </div>
-            </div>
-            <nav id="lnb">
-                <div class="container">
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-dropdown">한미인의원소개</button>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href="#">한미인의원소개</a></li>
-                            <li><a href="#">의사,스텝소개</a></li>
-                            <li><a href="#">오시는길,진료시간</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">지점안내</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            </div>-->
         </div>
         
-        <!-- tab-bar -->
-        <div class="tab-bar">
+        <nav class="depth-2">
             <div class="container">
                 <ul>
-                    <li class="active"><a href="#">의사</a></li>
-                    <li><a href="#">스텝</a></li>
+                    <li class="active"><a href="#">메뉴 1-1</a></li>
+                    <li><a href="#">메뉴 1-2</a></li>
+                    <li><a href="#">메뉴 1-3</a></li>
+                    <li><a href="#">메뉴 1-4</a></li>
+                    <li><a href="#">메뉴 1-5</a></li>
+                    <li><a href="#">메뉴 1-6</a></li>
                 </ul>
-            </div>
-        </div>
-        
+            </div>    
+        </nav>
+        <nav class="depth-3">
+            <div class="container">
+                <ul>
+                    <li class="active"><a href="#">메뉴 1-1-1</a></li>
+                    <li><a href="#">메뉴 1-1-2</a></li>
+                    <li><a href="#">메뉴 1-1-3</a></li>
+                    <li><a href="#">메뉴 1-1-4</a></li>
+                    <li><a href="#">메뉴 1-1-5</a></li>
+                    <li><a href="#">메뉴 1-1-6</a></li>
+                </ul>
+            </div>    
+        </nav>
     </main>
 
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
     <script>
+        (function($){
+            $(document).ready(function(){
+                $('body').addClass('sub');
+            });
+        })(jQuery);
+    </script>
+    <!--script>
         (function($){
             // sub body class add (header scroll 효과적용)
             $(document).ready(function(){
@@ -63,9 +70,8 @@
             $(document).on('click','#lnb .btn-dropdown', function(){
                 $(this).toggleClass('on');
                 $('#lnb .dropdown').toggleClass('show');
-                //console.log('a');
             });
         })(jQuery);
-    </script>    
+    </script-->
 </body>
 </html>

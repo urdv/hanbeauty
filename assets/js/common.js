@@ -7,17 +7,32 @@
             $('#header').removeClass('scrolled');
         }
     });
-
-    // nav 관련
+    
     $(document).on('click','#header .btn-nav', function(){
+		var bgVideo = $(".bg-video").get(0);
         $(this).toggleClass('btn-close');
         $('body').toggleClass('nav-opened');
+		if (bgVideo) {
+            bgVideo.play();
+		}
+        $('.summary > ul').not('.slick-initialized').slick({
+            autoplay: true,
+            autoplaySpeed: 6000,
+            dots: false, 
+            arrows: false
+        });
+        setTimeout(function(){
+            $('.summary').addClass('active');
+        }, 800);
     });
-    $(document).on('click', '#nav .backdrop, .nav-close', function(){
+    
+    
+    $(document).on('click', '#nav .nav-close', function(){
         $('.btn-nav').removeClass('btn-close');
         $('body').removeClass('nav-opened');
+        $('.summary').removeClass('active');
     });
-
+    
     // gnb 관련
     $(document).on('mouseenter', '#gnb > ul > li > a', function(){
         $(this).parent().addClass('active');
