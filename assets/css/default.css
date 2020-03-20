@@ -686,6 +686,8 @@ body.nav-opened {
           background-repeat: no-repeat;
           background-position: 50% 50%;
           background-size: 18px auto; }
+        body.banner-open #banner .container-fluid .bx-wrapper .bx-viewport {
+          height: 100px !important; }
         body.banner-open #banner .container-fluid .bx-wrapper .bx-controls .bx-pager {
           position: absolute;
           bottom: 10px;
@@ -715,13 +717,15 @@ body.nav-opened {
                 background-color: #fff; }
             body.banner-open #banner .container-fluid .bx-wrapper .bx-controls .bx-pager .bx-pager-item:first-child > a {
               margin-left: 0; }
-        body.banner-open #banner .container-fluid .banner-slider li > a {
-          display: block;
-          width: 100%;
-          height: 100px;
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: cover;
-          text-decoration: none !important; } }
+        body.banner-open #banner .container-fluid .banner-slider li {
+          width: 100% !important; }
+          body.banner-open #banner .container-fluid .banner-slider li > a {
+            display: block;
+            width: 100%;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            text-decoration: none !important; } }
 
 /*# sourceMappingURL=default.css.map */

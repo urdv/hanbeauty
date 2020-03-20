@@ -331,39 +331,52 @@ table {
     .popularity-procedure .section-content article ~ article {
       margin-top: 40px; }
     .popularity-procedure .section-content article .article-header {
-      padding-bottom: 20px; }
+      padding: 10px 5px 0;
+      background-color: #fff; }
       .popularity-procedure .section-content article .article-header > h4 {
-        font-size: 18px;
-        color: #000;
-        line-height: 26px; }
-        .popularity-procedure .section-content article .article-header > h4 b {
+        font-size: 16px;
+        line-height: 22px;
+        color: #000; }
+        .popularity-procedure .section-content article .article-header > h4 > b {
           display: block;
           font-weight: bold;
           color: #8e82fe; }
-    .popularity-procedure .section-content article > ul > li {
-      padding: 20px 10px 30px;
+    .popularity-procedure .section-content article > ul {
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 5px;
       background-color: #fff; }
-      .popularity-procedure .section-content article > ul > li ~ li {
-        margin-top: 10px; }
-      .popularity-procedure .section-content article > ul > li > a {
-        display: block;
-        text-decoration: none; }
-        .popularity-procedure .section-content article > ul > li > a figure > img {
-          width: 100%; }
-        .popularity-procedure .section-content article > ul > li > a figure figcaption {
-          text-align: center;
-          padding-top: 20px; }
-          .popularity-procedure .section-content article > ul > li > a figure figcaption > p {
-            font-size: 16px;
-            font-weight: 400;
-            color: #333;
-            display: block; }
-          .popularity-procedure .section-content article > ul > li > a figure figcaption > strong {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #333;
-            display: block;
-            font-weight: bold; }
+      .popularity-procedure .section-content article > ul > li {
+        float: left;
+        width: 50%;
+        padding: 0;
+        background: none; }
+        .popularity-procedure .section-content article > ul > li > a {
+          display: block;
+          text-decoration: none; }
+          .popularity-procedure .section-content article > ul > li > a figure > img {
+            width: 100%; }
+          .popularity-procedure .section-content article > ul > li > a figure figcaption {
+            text-align: center;
+            padding-top: 10px; }
+            .popularity-procedure .section-content article > ul > li > a figure figcaption > p {
+              font-size: 11px;
+              font-weight: 400;
+              color: #333;
+              display: block; }
+            .popularity-procedure .section-content article > ul > li > a figure figcaption > strong {
+              font-size: 13px;
+              margin-top: 10px;
+              color: #333;
+              display: block;
+              font-weight: bold; }
+        .popularity-procedure .section-content article > ul > li ~ li {
+          margin-top: 0; }
+        .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 1) {
+          clear: both;
+          padding-right: 2.5px; }
+        .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 2) {
+          padding-left: 2.5px; }
   @media (min-width: 768px) {
     .popularity-procedure .section-header {
       padding: 60px 0; }
@@ -387,27 +400,24 @@ table {
     .popularity-procedure .section-content {
       padding: 50px 0; }
       .popularity-procedure .section-content article .article-header {
-        padding: 20px 10px 0;
-        background-color: #fff; }
-        .popularity-procedure .section-content article .article-header > h4 > b {
-          display: inline-block; }
+        padding: 20px 10px 0; }
+        .popularity-procedure .section-content article .article-header > h4 {
+          font-size: 18px;
+          line-height: 26px; }
+          .popularity-procedure .section-content article .article-header > h4 > b {
+            display: inline-block; }
       .popularity-procedure .section-content article > ul {
-        overflow: hidden;
-        width: 100%;
-        padding: 20px 10px;
-        background-color: #fff; }
-        .popularity-procedure .section-content article > ul > li {
-          float: left;
-          width: 50%;
-          padding: 0;
-          background: none; }
-          .popularity-procedure .section-content article > ul > li ~ li {
-            margin-top: 0; }
-          .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 1) {
-            clear: both;
-            padding-right: 5px; }
-          .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 2) {
-            padding-left: 5px; } }
+        padding: 20px 10px; }
+        .popularity-procedure .section-content article > ul > li > a figure figcaption {
+          padding-top: 20px; }
+          .popularity-procedure .section-content article > ul > li > a figure figcaption > p {
+            font-size: 14px; }
+          .popularity-procedure .section-content article > ul > li > a figure figcaption > strong {
+            font-size: 16px; }
+        .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 1) {
+          padding-right: 5px; }
+        .popularity-procedure .section-content article > ul > li:nth-of-type(2n + 2) {
+          padding-left: 5px; } }
   @media (min-width: 992px) {
     .popularity-procedure .section-header {
       padding: 100px 0; }
@@ -464,6 +474,10 @@ table {
         transition-timing-function: linear;
         -webkit-transition-delay: 0s;
         transition-delay: 0s; }
+        .popularity-procedure .section-content article > ul > li > a > figure > figcaption > p {
+          font-size: 16px; }
+        .popularity-procedure .section-content article > ul > li > a > figure > figcaption > strong {
+          font-size: 18px; }
         .popularity-procedure .section-content article > ul > li > a:hover {
           opacity: .7; } }
   @media (min-width: 1200px) {

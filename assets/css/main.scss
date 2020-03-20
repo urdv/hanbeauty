@@ -376,12 +376,13 @@
                 margin-top: 40px;
             }
             .article-header {
-                padding-bottom: 20px;
+                padding: 10px 5px 0;
+                background-color: #fff;
                 > h4 {
-                    font-size: 18px;
+                    font-size: 16px;
+                    line-height: 22px;
                     color: #000;
-                    line-height: 26px;
-                    b {
+                    > b {
                         display: block;
                         font-weight: bold;
                         color: #8e82fe;
@@ -389,12 +390,15 @@
                 }
             }
             > ul {
+                overflow: hidden;
+                width: 100%;
+                padding: 10px 5px;
+                background-color: #fff;
                 > li {
-                    padding: 20px 10px 30px;
-                    background-color: #fff;
-                    & ~ li {
-                        margin-top: 10px;
-                    }
+                    float: left;
+                    width: 50%;
+                    padding: 0;
+                    background: none;
                     > a {
                         display: block;
                         text-decoration: none;
@@ -404,15 +408,15 @@
                             }
                             figcaption {
                                 text-align: center;
-                                padding-top: 20px;
+                                padding-top: 10px;
                                 > p {
-                                    font-size: 16px;
+                                    font-size: 11px;
                                     font-weight: 400;
                                     color: #333;
                                     display: block;
                                 }
                                 > strong {
-                                    font-size: 18px;
+                                    font-size: 13px;
                                     margin-top: 10px;
                                     color: #333;
                                     display: block;
@@ -420,6 +424,16 @@
                                 }
                             }
                         }
+                    }
+                    & ~ li {
+                        margin-top: 0;
+                    }
+                    &:nth-of-type(2n + 1) {
+                        clear: both;
+                        padding-right: 2.5px;
+                    }
+                    &:nth-of-type(2n + 2) {
+                        padding-left: 2.5px;
                     }
                 }
             }
@@ -469,28 +483,31 @@
             article {
                 .article-header {
                     padding: 20px 10px 0;
-                    background-color: #fff;
                     > h4 {
+                        font-size: 18px;
+                        line-height: 26px;
                         > b {
                             display: inline-block;
                         }
                     }
                 }
                 > ul {
-                    overflow: hidden;
-                    width: 100%;
                     padding: 20px 10px;
-                    background-color: #fff;
                     > li {
-                        float: left;
-                        width: 50%;
-                        padding: 0;
-                        background: none;
-                        & ~ li {
-                            margin-top: 0;
+                        > a {
+                            figure {
+                                figcaption {
+                                    padding-top: 20px;
+                                    > p {
+                                        font-size: 14px;
+                                    }
+                                    > strong {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
                         }
                         &:nth-of-type(2n + 1) {
-                            clear: both;
                             padding-right: 5px;
                         }
                         &:nth-of-type(2n + 2) {
@@ -562,6 +579,16 @@
                     > li {
                         > a {
                             @include transition();
+                            > figure {
+                                > figcaption {
+                                    > p {
+                                        font-size: 16px;
+                                    }
+                                    > strong {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
                             &:hover {
                                 opacity: .7;
                             }

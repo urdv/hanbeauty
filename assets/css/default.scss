@@ -811,6 +811,9 @@ body {
                         background-size: 18px auto;
                     }
                     .bx-wrapper {
+                        .bx-viewport {
+                            height: 100px !important;
+                        }
                         .bx-controls {
                             .bx-pager {
                                 position: absolute;
@@ -845,6 +848,7 @@ body {
                     }
                     .banner-slider {
                         li {
+                            width: 100% !important;
                             > a {
                                 display: block;
                                 width: 100%;
