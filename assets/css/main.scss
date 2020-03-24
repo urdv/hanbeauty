@@ -2,6 +2,7 @@
 
 /* introduction */
 .introduction {
+    position: relative;
     opacity: 0;
     @include nns();
     box-sizing: border-box;
@@ -18,6 +19,39 @@
         &:hover, &:focus {
             color: #444;
             box-shadow: none;
+        }
+    }
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: url(/assets/images/sub/bg_video_opacity.png);
+            @media(min-width: $xl) {
+                display: block;
+            }
+        }
+        .figure {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        .video {
+            display: none;
+            height: 100%;
         }
     }
     .container-fluid {
@@ -62,13 +96,6 @@
             .intro-item {
                 position: relative;
                 height: 450px;
-                .figure {
-                    width: 100%;
-                    height: 100%;
-                    background-repeat: no-repeat;
-                    background-position: 50% 50%;
-                    background-size: cover;
-                }
                 .default-content {
                     position: absolute;
                     top: 0;
@@ -134,9 +161,6 @@
                         }
                     }
                 }
-                .video {
-                    display: none;
-                }
                 &.active {
                     .default-content {
                         > .v-align {
@@ -159,6 +183,9 @@
         }
     }
     @media(min-width: $md) {
+        .backdrop {
+            height: 700px;
+        }
         .container-fluid {
             .bx-wrapper {
                 .bx-controls {
@@ -243,6 +270,9 @@
         }
     }
     @media(min-width: $lg) {
+        .backdrop {
+            height: 700px;
+        }
         .container-fluid {
             .bx-wrapper {
                 .bx-controls {
@@ -260,36 +290,27 @@
             }
             .intro-slide {
                 .intro-item {
-                    height: 800px;
-                    .video {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        transform: scale(1.5);
-                        -webkit-transform: scale(1.5);
-                    }
+                    height: 700px;
                 }
             }
         }
     }
     @media(min-width: $xl) {
+        .backdrop {
+            height: 950px;
+            .figure {
+                display: none;
+            }
+            .video {
+                display: block;
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+            }
+        }
         .container-fluid {
             .intro-slide {
                 .intro-item {
                     height: 950px;
-                    .video {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        transform: scale(1.5);
-                        -webkit-transform: scale(1.5);
-                    }
                 }
             }
         }

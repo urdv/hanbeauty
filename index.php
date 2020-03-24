@@ -6,13 +6,16 @@
 
     <!-- introduction -->
     <section class="introduction">
+        <div class="backdrop">
+            <div class="bg-pattern"></div>
+            <video id="intro-video" class="video" autoplay loop muted preload="metadata">
+                <source src="https://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112" type="video/mp4">
+            </video>
+            <div class="figure" style="background-image: url(/assets/images/bg_slider01.jpg);"></div>
+        </div>
         <div class="container-fluid">
             <ul class="intro-slide">
                 <li class="intro-item">
-                    <div class="figure" style="background-image: url(/assets/images/bg_slider01.jpg);"></div>
-                    <video id="intro-video-1" class="video" loop muted preload="metadata">
-                        <source src="https://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112" type="video/mp4">
-                    </video>
                     <div class="default-content">
                         <div class="v-align">
                             <h3>더미 타이틀 텍스트2</h3>
@@ -22,7 +25,6 @@
                     </div>
                 </li>
                 <li class="intro-item">
-                    <div class="figure" style="background-image: url(/assets/images/bg_slider01.jpg);"></div>
                     <div class="default-content">
                         <div class="v-align">
                             <h3>더미 타이틀 텍스트2</h3>
@@ -32,10 +34,6 @@
                     </div>
                 </li>
                 <li class="intro-item">
-                    <div class="figure" style="background-image: url(/assets/images/bg_slider01.jpg);"></div>
-                    <video id="intro-video-3" class="video" loop muted preload="metadata">
-                        <source src="https://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112" type="video/mp4">
-                    </video>
                     <div class="default-content">
                         <div class="v-align">
                             <h3>더미 타이틀 텍스트2</h3>
@@ -45,7 +43,6 @@
                     </div>
                 </li>
                 <li class="intro-item">
-                    <div class="figure" style="background-image: url(/assets/images/bg_slider01.jpg);"></div>
                     <div class="default-content">
                         <div class="v-align">
                             <h3>더미 타이틀 텍스트2</h3>

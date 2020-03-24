@@ -14,24 +14,12 @@
         onSliderLoad: function(currentIndex) {
             var $currentElem = $('.intro-slide .intro-item:not(.bx-clone):eq(0)');
             $currentElem.addClass('active');
-            var introVideo = document.getElementById('intro-video-'+(currentIndex+1));
-            if (introVideo) {
-                introVideo.play();
-            }
         },
         onSlideBefore: function($slideElement, oldIndex, newIndex) {
             $('.intro-slide .intro-item.active').removeClass('active');
-            var introVideo = document.getElementById('intro-video-'+(oldIndex+1));
-            if (introVideo) {
-                introVideo.pause();
-            }
         },
         onSlideAfter: function($slideElement, oldIndex, newIndex) {
             $slideElement.addClass('active');
-            var introVideo = document.getElementById('intro-video-'+(newIndex+1));
-            if (introVideo) {
-                introVideo.play();
-            }
         }
     });
     

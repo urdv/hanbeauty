@@ -30,6 +30,7 @@ table {
 
 /* introduction */
 .introduction {
+  position: relative;
   opacity: 0;
   font-family: 'NanumSquare', sans-serif;
   box-sizing: border-box; }
@@ -44,6 +45,35 @@ table {
     .introduction a:hover, .introduction a:focus, .introduction button:hover, .introduction button:focus {
       color: #444;
       box-shadow: none; }
+  .introduction .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden; }
+    .introduction .backdrop .bg-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-image: url(/assets/images/sub/bg_video_opacity.png); }
+      @media (min-width: 1200px) {
+        .introduction .backdrop .bg-pattern {
+          display: block; } }
+    .introduction .backdrop .figure {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover; }
+    .introduction .backdrop .video {
+      display: none;
+      height: 100%; }
   .introduction .container-fluid .bx-wrapper {
     position: relative;
     margin: 0;
@@ -85,12 +115,6 @@ table {
   .introduction .container-fluid .intro-slide .intro-item {
     position: relative;
     height: 450px; }
-    .introduction .container-fluid .intro-slide .intro-item .figure {
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: cover; }
     .introduction .container-fluid .intro-slide .intro-item .default-content {
       position: absolute;
       top: 0;
@@ -175,8 +199,6 @@ table {
           .introduction .container-fluid .intro-slide .intro-item .default-content .v-align > .btn-more:hover:after {
             transform: rotate(180deg);
             -webkit-transform: rotate(180deg); }
-    .introduction .container-fluid .intro-slide .intro-item .video {
-      display: none; }
     .introduction .container-fluid .intro-slide .intro-item.active .default-content > .v-align > h3 {
       opacity: 1;
       transform: translateY(0); }
@@ -187,6 +209,8 @@ table {
       opacity: 1;
       transform: translateY(0); }
   @media (min-width: 768px) {
+    .introduction .backdrop {
+      height: 700px; }
     .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction {
       display: block; }
       .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a {
@@ -244,33 +268,25 @@ table {
           background-size: 26px auto;
           margin-left: 10px; } }
   @media (min-width: 992px) {
+    .introduction .backdrop {
+      height: 700px; }
     .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
       left: 40px; }
     .introduction .container-fluid .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
       right: 40px; }
     .introduction .container-fluid .intro-slide .intro-item {
-      height: 800px; }
-      .introduction .container-fluid .intro-slide .intro-item .video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5); } }
+      height: 700px; } }
   @media (min-width: 1200px) {
-    .introduction .container-fluid .intro-slide .intro-item {
+    .introduction .backdrop {
       height: 950px; }
-      .introduction .container-fluid .intro-slide .intro-item .video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      .introduction .backdrop .figure {
+        display: none; }
+      .introduction .backdrop .video {
         display: block;
         transform: scale(1.5);
-        -webkit-transform: scale(1.5); } }
+        -webkit-transform: scale(1.5); }
+    .introduction .container-fluid .intro-slide .intro-item {
+      height: 950px; } }
 
 /* popularity-procedure */
 .popularity-procedure {
